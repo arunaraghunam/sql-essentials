@@ -10,3 +10,8 @@ end
 --execute function
 select dbo.CalculateAge('3/8/1983')
 
+select * from [dbo].[EmployeeTbl]
+
+select ID, [Name], DOB, 
+dbo.CalculateAge(DOB) as Age from [dbo].[EmployeeTbl] WHERE 
+dbo.CalculateAge(DOB)>=30
