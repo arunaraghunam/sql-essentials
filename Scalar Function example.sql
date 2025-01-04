@@ -7,4 +7,6 @@ set @Age=DATEDIFF(YEAR,@DOB,GETDATE())
 return @Age
 end
 
+--execute function
+select dbo.CalculateAge('3/8/1983')
 
