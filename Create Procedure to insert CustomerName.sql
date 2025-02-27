@@ -7,3 +7,5 @@ BEGIN
  VALUES (4, @customername, 1)
 
 END;
+
+EXEC insertCustomer 'DLP Shipping';
